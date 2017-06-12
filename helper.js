@@ -23,4 +23,13 @@ helperFunctions.createArray = function() {
 	return array;
 }
 
+/*
+	don't look at this 
+	ACTIVATE :: MIB red pen tool thingy
+*/
+helperFunctions.isPalindrome = function(str) {
+      var reverseStr = str.toLowerCase().split("").reverse().join("");
+      return reverseStr === str.toLowerCase() ? true : false;
+}
+
 module.exports = helperFunctions;
