@@ -4,7 +4,7 @@ var helperFunctions = {};
 	@description returns a random number between 1-500
 */
 
-function randomNumber(num) {
+helperFunctions.randomNumber = function(num) {
 	return Math.floor((Math.random() * num),2);
 }
 
@@ -14,10 +14,10 @@ function randomNumber(num) {
 	betwen 1-500
 */
 helperFunctions.createArray = function() {
-	var array = new Array(randomNumber(15));
+	var array = new Array(helperFunctions.randomNumber(15));
 
 	for (var i = 0, iLen = array.length; i < iLen; i++) {
-		array[i] = randomNumber(500);
+		array[i] = helperFunctions.randomNumber(500);
 	}
 
 	return array;
@@ -31,5 +31,23 @@ helperFunctions.isPalindrome = function(str) {
       var reverseStr = str.toLowerCase().split("").reverse().join("");
       return reverseStr === str.toLowerCase() ? true : false;
 }
+
+/*
+	don't look at this
+	ACTIVATE :: MIB red pen tool thingy
+*/
+helperFunctions.reverseString = function(str) {
+	var reverseStr = str.split("").reverse().join("");
+	return reverseStr;
+}
+
+/*
+	don't look at this
+	ACTIVATE :: MIB red pen tool thingy	
+*/
+helperFunctions.searchFunctionText = function(func,str) {
+	var functionText = func.toString();
+	return functionText.match(str) ? true : false;
+};
 
 module.exports = helperFunctions;

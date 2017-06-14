@@ -71,7 +71,7 @@ describe("Array Functions:: ", function() {
       } else if (array[i]*5===0) {
           actualValue.push("Buzz");
       } else {
-        actualValue.push(null);
+        actualValue.push(array[i]);
       }
     }
     console.log(array);
@@ -80,7 +80,6 @@ describe("Array Functions:: ", function() {
   });
 
 });
-
 
 describe("Check if a string is a palindrome:: ", function() {
  
@@ -108,8 +107,57 @@ describe("Check if a string is a palindrome:: ", function() {
   it("Anna is a palindrome",function() {
     expect(yourMethods.isPalindrome("AnNa")).toBe(helperFunctions.isPalindrome("AnNa"))
   });  
-})
+});
 
+describe("Reverse a string", function() {
+  var string;
+  beforeEach(function(){
+    string = "I am Kentucky Fried Chicken";
+  });
+
+  it("Reverse a string without using any native JS methods", function() {
+    expect(helperFunctions.searchFunctionText(yourMethods.reverseString, ".reverse()")).toBe(false);
+    expect(yourMethods.reverseString(string)).toBe("nekcihC deirF ykcutneK ma I");
+  }); 
+
+  it("Reverse a string using native JS methods", function() {
+    expect(helperFunctions.searchFunctionText(yourMethods.reverseString, ".reverse()")).toBe(true);
+    expect(yourMethods.reverseString(string)).toBe("nekcihC deirF ykcutneK ma I");
+  });
+
+  it("Adds a reverse string method called 'reverseString' for all primitive string types", function() {
+    yourMethods.addStringFunction();
+    expect(string.reverseString).toBeDefined();
+    expect(string.reverseString(string)).toBe("nekcihC deirF ykcutneK ma I");
+  });
+});
+
+describe("Prime Number", function() {
+
+  it("Check if 1 is a prime number", function() {
+    expect(yourMethods.isPrime(1)).toBe(true);
+  });
+
+  it("Check if 2 is a prime number", function() {
+    expect(yourMethods.isPrime(2)).toBe(true);
+  });
+
+  it("Check if 9 is a prime number", function() {
+    expect(yourMethods.isPrime(9)).toBe(false);
+  });
+
+  it("Check if 237 is a prime number", function(){
+    expect(yourMethods.isPrime(237)).toBe(false);
+  });
+
+  it("Check if 137 is a prime number", function() {
+    expect(yourMethods.isPrime(137)).toBe(true);
+  })
+  it("Check if -54 is a prime Number", function() {
+    expect(yourMethods.isPrime(-54)).toBe(false);
+  });
+
+});
 
 
 

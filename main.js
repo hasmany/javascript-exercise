@@ -37,8 +37,6 @@ yourMethods.findMax = function(array) {
 	@paramter {Array}
 	@return {Number} a number value
 */
-
-
 yourMethods.findSum = function(array) {
 	var sum = 0;
 	var length = array.length;
@@ -70,7 +68,7 @@ yourMethods.sortDsc = function(array) {
 }
 
 /*
-	@descripiton Create an array with the following corresponding values::
+	@description Create an array with the following corresponding values::
 		- if the current index is a multiple of 3 use "Fizz"
 		- if it's a multiple of  5, use "Buzz"
 		- if it's divisilbe by both 3 and 5, use "FizzBuzz"
@@ -83,13 +81,45 @@ yourMethods.fizzBuzz = function(array) {
 	
 }
 
-
 /*
 	@description checks if a string is a palindrome
 	@paramter {String}
 	@return {Boolean}
 */
 yourMethods.isPalindrome = function(str) {
+
+}
+
+/*
+	@description reverse a string without native js methods
+	@paramter {String}
+	@return {String}
+*/
+yourMethods.reverseString = function(str) {
+
+}
+
+/*
+	@description reverse a string using native js methods
+	@parameter {String}
+	@return {String}
+*/
+yourMethods.reverseNativeString = function(str) {
+
+}
+
+/*
+	@description add a reverse string method called "reverseString" to all Primitive String types
+*/
+yourMethods.addStringFunction = function() {
+
+}
+
+/*
+	@description checks if a number is a prime number
+	@paramter {}
+*/	
+yourMethods.isPrime = function(num) {
 
 }
 
