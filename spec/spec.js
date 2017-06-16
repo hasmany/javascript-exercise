@@ -32,17 +32,17 @@ describe("Array Functions:: ", function() {
   it("Sort the values in an array from lowest to highest", function() {
     var copyArray  = array.concat();
 
-    var actualValue = array.sort(function(a,b) {
-      if (a>b) {
-        return 1;
-      } else if (a<b) {
-        return -1;
-      } else {
-        return 0;
-      }
-    });
-   
-    expect(yourMethods.sortAscn(copyArray)).toBe(actualValue);
+    // var actualValue = array.sort(function(a,b) {
+    //   if (a>b) {
+    //     return 1;
+    //   } else if (a<b) {
+    //     return -1;
+    //   } else {
+    //     return 0;
+    //   }
+    // });
+
+    expect(yourMethods.sortAscn(copyArray)).toBe(helperFunctions.sortArray(array));
   });
 
   it("Sort the values of an array from highest to lowest", function() {
@@ -131,33 +131,3 @@ describe("Reverse a string", function() {
     expect(string.reverseString(string)).toBe("nekcihC deirF ykcutneK ma I");
   });
 });
-
-describe("Prime Number", function() {
-
-  it("Check if 1 is a prime number", function() {
-    expect(yourMethods.isPrime(1)).toBe(true);
-  });
-
-  it("Check if 2 is a prime number", function() {
-    expect(yourMethods.isPrime(2)).toBe(true);
-  });
-
-  it("Check if 9 is a prime number", function() {
-    expect(yourMethods.isPrime(9)).toBe(false);
-  });
-
-  it("Check if 237 is a prime number", function(){
-    expect(yourMethods.isPrime(237)).toBe(false);
-  });
-
-  it("Check if 137 is a prime number", function() {
-    expect(yourMethods.isPrime(137)).toBe(true);
-  })
-  it("Check if -54 is a prime Number", function() {
-    expect(yourMethods.isPrime(-54)).toBe(false);
-  });
-
-});
-
-
-

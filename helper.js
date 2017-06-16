@@ -24,6 +24,42 @@ helperFunctions.createArray = function() {
 }
 
 /*
+	don't look at this
+	ACTIVATE :: MIB red pen tool thingy
+*/
+helperFunctions.sortArrayAscending = function(array) {
+ 	var actualValue = array.sort(function(a,b) {
+      if (a>b) {
+        return 1;
+      } else if (a<b) {
+        return -1;
+      } else {
+        return 0;
+      }
+    }); 
+
+    return actualValue;
+}
+
+/*
+	don't look at this
+	ACTIVATE :: MIB red pen tool thingy
+*/
+helperFunctions.sortArrayDescending = function(array) {
+	var actualValue = array.sort(function(a,b) {
+		if (a > b) {
+			return -1
+		} else if (a < b) {
+			return 1;
+		} else {
+			return 0;
+		}
+	});
+
+	return actualValue;
+}
+
+/*
 	don't look at this 
 	ACTIVATE :: MIB red pen tool thingy
 */

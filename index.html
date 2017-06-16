@@ -6,27 +6,42 @@
 	
 </head>
 <body>
-	
+	<style>
+		.main-list > li {
+			margin-bottom: 15px;
+		}
+	</style>
 	<script src="main.js"></script>
 	<div class="jumbotron text-center">
-		<h1>Array exercises</h1>
+		<h1>JavaScript exercises</h1>
 	</div>
 	<div class="lead">
-		<ol class="">
+		<ol class="main-list">
 			<li>
 				Run npm install
 			</li>
 			<li>
-				Open up main.js, and follow the instructions in the comments for each function
+				The examples are divded into three sections
+					<ol>
+						<li>array.js</li>
+						<li>math.js</li>
+						<li>string.js</li>
+					</ol>
 			</li>
 			<li>
-				You can <span class="text-transform">ONLY</span> use for loops. Nothing ELSE!
+				Follow the comments in each section to guide you along. 
+				<div>Reading the test files will also help, try not to look helper.js becuse they may contain solutions(or at least <b>one</b> way to do them)</div>
 			</li>
 			<li>
-				Run npm test, get all the test to pass!
+				To run test, type this in terminal
+				<code>npm test spec/{{section}}Spec.js</code>
+				<div>For an example to test the array methods: <code>npm test spec/arraySpec.js</code></div>				
 			</li>
 			<li>
-				Try not use stackoverflow at first
+				Get all the test to pass
+			</li>
+			<li>
+				There are many ways to get the test to pass, be creative!
 			</li>
 		</ol>		
 	</div>

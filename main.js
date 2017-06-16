@@ -68,15 +68,14 @@ yourMethods.sortDsc = function(array) {
 }
 
 /*
-	@description Create an array with the following corresponding values::
-		- if the current index is a multiple of 3 use "Fizz"
-		- if it's a multiple of  5, use "Buzz"
+	@description Create a new array from an existing array with the following corresponding values::
+		- if the current value is a multiple of 3 use "Fizz"
+		- if it's a multiple of 5, use "Buzz"
 		- if it's divisilbe by both 3 and 5, use "FizzBuzz"
-		- If it's not divibible by either 3 or 5, use Null
+		- If it's not divibible by either 3 or 5, use the value in the array
 	@paramter {Array}
 	@return {Array}
 */
-
 yourMethods.fizzBuzz = function(array) {
 	
 }
@@ -117,7 +116,8 @@ yourMethods.addStringFunction = function() {
 
 /*
 	@description checks if a number is a prime number
-	@paramter {}
+	@paramter {Number}
+	@return {Boolean}
 */	
 yourMethods.isPrime = function(num) {
 
