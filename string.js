@@ -8,8 +8,10 @@ var stringMethods = {};
 	@paramter {String}
 	@return {Boolean}
 */
-stringMethods.isPalindrome = function(array) {
-
+stringMethods.isPalindrome = function(string) {
+  // if string is a palindrome return true;
+  // if string is NOT a palindrome return false;
+  return "hi";
 }
 
 /*

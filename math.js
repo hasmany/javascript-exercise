@@ -7,7 +7,7 @@ var mathMethods = {};
 	@paramter {Number}
 	@return {Boolean}
 */
-mathMethods.isPrime = function(array) {
+mathMethods.isPrime = function(num) {
 
 }
 
