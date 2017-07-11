@@ -19,8 +19,8 @@ helperFunctions.createArray = function() {
 	for (var i = 0, iLen = array.length; i < iLen; i++) {
 		array[i] = helperFunctions.randomNumber(500);
 	}
-
-	return array;
+	return [1,2,3];
+	// return array;
 }
 
 /*
